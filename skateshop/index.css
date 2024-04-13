@@ -10,11 +10,14 @@
 
 
 /* -------------------------------BARRA DE NAVEGACIÓN----------------------------------- */
-a{
+.enlaces{
     text-decoration: none;
     color: rgb(255, 255, 255);
     list-style-type: none;
+}
 
+.enlaces:hover{
+    color: rgb(0, 179, 255);
 }
 
 ul{
@@ -24,24 +27,28 @@ ul{
 #navegacion{
     background-color: black;
     padding: 0.7%;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 #menu{
     display: flex;
-    width: 100%;
+    width: 80%;
 }
 
 #tipe{
     font-size: 170%;
     font-family: name;
     src: url(letra.ttf);
-    padding-right: 12%;
+    padding-right: 9%;
     white-space: nowrap;
+    color: white;
 }
 
 #centro{
     display: flex;
-    gap: 45%;
+    gap: 35%;
     font-size: 120%;
     padding-right: 30%;
     padding-top: 0.5%;
@@ -62,20 +69,138 @@ ul{
 }
 
 #carro{
-    width: 25%;
+    width: 15%;
 }
+
+#carro_img{
+    width: 240%;
+}
+
+
 
 /* --------------------------------------- CATEGORIAS ----------------------------------------- */
 
 #contenedor1{
     padding-left: 10%;
-    padding-top: 1%;
+    padding-top: 7%;
     padding-right: 10%;
 }
 
-.fondos{
-width: 80%;
-height: 350px;
-position: relative;
-left: 10%;
+#tablas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+.tabla{
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(3, 47, 151);
+    border-radius: 10%;
+    width: 80%;
+    line-height: 115%;
+}
+
+.imagen{
+    width: 70%;
+    height: 270px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 130%;
+    padding-bottom: 5%;
+}
+
+.precio{
+    font-weight: bold;
+    font-size: 120%; 
+    padding-bottom: 5%;
+    color: rgb(100, 4, 100);
+}
+
+.descripcion{
+    padding-bottom: 5%;
+}
+
+.botonzz{
+    padding: 2%;
+    margin-bottom: 5%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(19, 15, 239);
+    border-radius: 13px;
+    background-color: #0d94dd;
+    color: white;
+    font-weight: bold;
+}
+
+.botonzz:hover{
+    background-color: blueviolet;
+}
+
+
+#ropa{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+#contenedor2{
+    padding-left: 10%;
+    padding-top: 15%;
+    padding-right: 10%;
+}
+
+.tabla2{
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(136, 0, 255);
+    border-radius: 10%;
+    width: 80%;
+    line-height: 115%;
+}
+
+.cantidad{
+    font-weight:bold;
+    color: darkblue;
+}
+
+#btn-btn-TR{
+background-color: crimson;
+}
+
+
+
+.item-carrito {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.img-carrito {
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.texto-producto {
+    flex-grow: 1;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#total-cost{
+    font-size: 120%;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
