@@ -1,94 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="./index.css">
-    <script src="index.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julián Durán · Desarrollador web</title>
+  <meta name="description" content="Portafolio de Julián Durán, desarrollador web: sitios, tiendas en línea y aplicaciones interactivas hechas con HTML, CSS y JavaScript.">
+  <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Julián Durán · Desarrollador web">
+  <meta property="og:description" content="Sitios, tiendas en línea y aplicaciones interactivas hechas con HTML, CSS y JavaScript.">
+  <meta property="og:image" content="assets/img/proyectos/skate-city-1200.webp">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+    // Aplica el tema guardado antes de pintar, para evitar un parpadeo
+    try { const t = localStorage.getItem("tema"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script src="assets/js/main.js" defer></script>
 </head>
-
 <body>
-    <div id="fondo"></div>
-        <div id="contenido">
-            <header>
-                <div id="arriba">
-                    <b>Mi Portafolio</b>
-                </div>
-            </header> 
+  <a class="saltar" href="#proyectos">Ir a los proyectos</a>
 
-            <div id="projects">
+  <header class="cabecera" id="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="#inicio" aria-label="Julián Durán, inicio">
+        <span class="marca__logo" aria-hidden="true">JD</span>
+        <span class="marca__nombre">Julián Durán</span>
+      </a>
 
-                <div id="tienda" class="proyect0">
-                    <a href="./Pagina Clon/index.html">
-                        <img class="ima" src="./imagenes/min tienda.png">
-                    </a>
-                    <div class="descrip"><b>TIENDA ELECTRONICA</b></div>
-                </div>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
 
-                <div id="sobre_mi" class="proyect0">
-                    <a href="./Portafolio/index.html">
-                        <img class="ima" src="./imagenes/min sobre mi.png">
-                    </a>
-                    <div class="descrip"><b>SOBRE MÍ</b></div>
-                </div>
+      <div class="cabecera__acciones">
+        <button class="boton-icono" id="tema" type="button" aria-label="Cambiar a tema claro">
+          <svg class="icono-sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icono-luna" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="boton-icono menu-boton" id="menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-                <div id="rapid" class="proyect0">
-                    <a href="./RAPID BITE (1)/index.html">
-                        <img class="ima" src="./imagenes\min rapidbite.png">
-                    </a>
-                    <div class="descrip"><b>COMIDAS RAPIDAS</b></div>
-                </div>
+  <main id="inicio">
+    <!-- ── Presentación ─────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="contenedor hero__grid">
+        <div class="hero__texto">
+          <p class="etiqueta"><span class="punto" aria-hidden="true"></span> Disponible para nuevos proyectos</p>
+          <h1>Construyo sitios web <span class="resaltado">claros, funcionales</span> y pensados para quien los usa.</h1>
+          <p class="hero__bajada">Soy Julián Durán, desarrollador web. Diseño y programo interfaces con HTML, CSS y JavaScript: tiendas en línea, sitios para negocios y aplicaciones interactivas.</p>
+          <div class="hero__acciones">
+            <a class="boton boton--primario" href="#proyectos">Ver proyectos</a>
+            <a class="boton boton--secundario" href="#contacto">Hablemos</a>
+          </div>
+          <dl class="cifras">
+            <div><dt>Proyectos</dt><dd data-contar-proyectos>8</dd></div>
+            <div><dt>Tecnologías</dt><dd>6+</dd></div>
+            <div><dt>Enfoque</dt><dd>Front-end</dd></div>
+          </dl>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <figure class="ventana ventana--atras"><img src="assets/img/proyectos/tienda-electronica-640.webp" alt="" width="640" height="320"></figure>
+          <figure class="ventana ventana--frente"><img src="assets/img/proyectos/skate-city-640.webp" alt="" width="640" height="320"></figure>
+        </div>
+      </div>
+    </section>
 
-                <div id="calculadora" class="proyect0">
-                    <a href="./calculadora/index.html">
-                        <img class="ima" src="./imagenes/min calculadora.png">
-                    </a>
-                    <div class="descrip"><b>CALCULADORA</b></div>
-                </div>
-
-                <div id="formulario" class="proyect0">
-                    <a href="./Formulario/index.html">
-                        <img class="ima" src="./imagenes/min formulario.png">
-                    </a>
-                    <div class="descrip"><b>FORMULARIO</b></div>
-                </div>
-
-                <div id="gestionador" class="proyect0">
-                    <a href="./gestion de tareas/index.html">
-                        <img class="ima" src="./imagenes\min gestion.png">
-                    </a>
-                    <div class="descrip"><b>GESTION DE TAREAS</b></div>
-                </div>
-
-                <div id="skateshop" class="proyect0">
-                    <a href="./skateshop/index.html">
-                        <img class="ima" src="./imagenes/min skateshop.png">
-                    </a>
-                    <div class="descrip"><b>SKATE SHOP</b></div>
-                </div>
-
-                <div id="veterinaria" class="proyect0">
-                    <a href="./Veterinaria/interfaz.html">
-                        <img class="ima" src="./imagenes/mIn veterinaria.png">
-                    </a>
-                    <div class="descrip"><b>VETERINARIA ANIMALIA</b></div>
-                </div>
-
-                <div id="ahorcado" class="proyect0">
-                    <a href="./ahorcado/index.html">
-                        <img class="ima" src="./imagenes/min ahorcado.png">
-                    </a>
-                    <div class="descrip"><b>AHORCADO</b></div>
-                </div>
-            </div>
+    <!-- ── Proyectos ───────────────────────────────────────────── -->
+    <section class="seccion" id="proyectos" aria-labelledby="titulo-proyectos">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <div>
+            <p class="seccion__sup">Trabajo seleccionado</p>
+            <h2 id="titulo-proyectos">Proyectos</h2>
+          </div>
+          <div class="filtros" role="group" aria-label="Filtrar proyectos">
+            <button type="button" class="filtro activo" data-filtro="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filtro" data-filtro="sitio" aria-pressed="false">Sitios web</button>
+            <button type="button" class="filtro" data-filtro="tienda" aria-pressed="false">Comercio</button>
+            <button type="button" class="filtro" data-filtro="app" aria-pressed="false">Aplicaciones</button>
+          </div>
         </div>
 
-        <footer>
-            <p>&copy; 2024 Portafolio Julian Duran</p>
-        </footer>
-    
-</body>
+        <ul class="rejilla" id="rejilla"><!-- tarjetas: assets/js/main.js --></ul>
+        <noscript><p class="aviso">Activa JavaScript para ver los proyectos, o explora la carpeta <code>proyectos/</code>.</p></noscript>
+      </div>
+    </section>
 
+    <!-- ── Sobre mí ────────────────────────────────────────────── -->
+    <section class="seccion seccion--alterna" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="contenedor sobre">
+        <div>
+          <p class="seccion__sup">Sobre mí</p>
+          <h2 id="titulo-sobre-mi">Código y diseño al servicio de cada proyecto</h2>
+        </div>
+        <div class="sobre__texto">
+          <p>Me apasiona crear experiencias digitales modernas, atractivas y fáciles de usar. Trabajo con HTML, CSS y JavaScript, y estoy en constante aprendizaje para mantenerme al día con nuevas tecnologías.</p>
+          <p>Cada proyecto de este portafolio resolvió un reto distinto: desde maquetar una tienda completa hasta programar la lógica de una agenda de citas o un gestor de tareas.</p>
+          <a class="enlace-flecha" href="proyectos/sobre-mi/index.html">Ver mi página personal <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Habilidades ─────────────────────────────────────────── -->
+    <section class="seccion" id="habilidades" aria-labelledby="titulo-habilidades">
+      <div class="contenedor">
+        <p class="seccion__sup">Herramientas</p>
+        <h2 id="titulo-habilidades">Habilidades</h2>
+        <ul class="habilidades">
+          <li><strong>HTML5</strong><span>Maquetación semántica y accesible</span></li>
+          <li><strong>CSS3</strong><span>Flexbox, Grid, diseño adaptable</span></li>
+          <li><strong>JavaScript</strong><span>DOM, eventos y lógica de interfaz</span></li>
+          <li><strong>Bootstrap</strong><span>Componentes y prototipado rápido</span></li>
+          <li><strong>Bases de datos</strong><span>Modelado y consultas</span></li>
+          <li><strong>Python</strong><span>Automatización y scripts</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Contacto ────────────────────────────────────────────── -->
+    <section class="seccion seccion--alterna" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="contenedor contacto">
+        <h2 id="titulo-contacto">¿Tienes un proyecto en mente?</h2>
+        <p>Cuéntame qué necesitas y lo construimos juntos.</p>
+        <div class="contacto__redes">
+          <a class="boton boton--primario" href="https://instagram.com/juliduran9" target="_blank" rel="noopener">Instagram</a>
+          <a class="boton boton--secundario" href="https://www.facebook.com/juli.duran.940" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <p>&copy; <span id="anio">2026</span> Julián Durán</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+</body>
 </html>

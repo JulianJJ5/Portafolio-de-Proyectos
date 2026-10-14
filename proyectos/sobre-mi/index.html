@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julián Durán · Desarrollador Web</title>
+    <meta name="description" content="Julián Durán, desarrollador web: creando soluciones digitales a través de código y diseño. Servicios, habilidades, proyectos y contacto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="./index.css">
+    <script src="../../assets/js/volver.js"></script>
+</head>
+
+<body>
+    <header class="cabecera" id="cabecera">
+        <div class="cabecera__barra">
+            <a class="logo" href="#inicio">/ADSO/</a>
+
+            <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu"
+                aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="menu" id="menu" aria-label="Principal">
+                <ul class="menu__lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/juli.duran.940?mibextid=ZbWKwL" target="_blank" rel="noopener"
+                            aria-label="Facebook"><img src="Imagenes/facebook.png" alt="" width="24" height="24"></a></li>
+                    <li><a href="https://instagram.com/juliduran9?igshid=Y3NlOGVwYWtzdWg3" target="_blank" rel="noopener"
+                            aria-label="Instagram"><img src="Imagenes/instagram.png" alt="" width="24" height="24"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero__contenido">
+                <p class="hero__saludo">BIENVENIDOS</p>
+                <h1 class="hero__titulo">Soy <span class="rojo">Julián Durán</span>, Desarrollador Web</h1>
+                <p class="hero__texto">Creando soluciones digitales a través de código y diseño.</p>
+                <a href="#proyectos" class="boton boton--claro">IR A PORTAFOLIO</a>
+            </div>
+        </section>
+
+        <section class="seccion seccion--rosa" id="sobre-mi">
+            <h2 class="seccion__titulo">SOBRE MÍ</h2>
+            <div class="sobre contenedor">
+                <img class="sobre__foto" src="Imagenes/persona.jpg" alt="Julián Durán de traje azul" width="300"
+                    height="450" loading="lazy">
+                <div class="sobre__texto">
+                    <h3 class="sobre__nombre">Hola, soy <span class="rojo">Julián Durán</span></h3>
+                    <p class="sobre__cargo">DESARROLLADOR WEB</p>
+                    <p>¡Hola! Soy Julián Durán, un apasionado desarrollador web con experiencia en la creación de sitios
+                        web modernos y funcionales. Me especializo en lenguajes como HTML, CSS y JavaScript, y estoy
+                        constantemente aprendiendo nuevas tecnologías para mantenerme actualizado en el campo. Mi
+                        objetivo es crear experiencias digitales atractivas y fáciles de usar para mis clientes. Estoy
+                        emocionado de formar parte de tu proyecto y ayudarte a alcanzar tus objetivos en línea.
+                        ¡Contáctame para discutir cómo puedo ayudarte a crear una presencia en línea impactante!</p>
+                    <a href="#contacto" class="boton boton--oscuro">Contáctame</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion--gris" id="servicios">
+            <h2 class="seccion__titulo">MIS SERVICIOS</h2>
+            <div class="servicios contenedor">
+                <article class="servicio">
+                    <img src="Imagenes/code.png" alt="" width="64" height="64" loading="lazy">
+                    <h3>Diseño de Sitios Web</h3>
+                    <p class="servicio__sub">Web Graphic SEO</p>
+                    <p>Soy un diseñador de sitios web con experiencia en crear sitios web atractivos, funcionales y
+                        fáciles de usar. Puedo ayudarte a crear un sitio web que represente tu marca y cumpla con tus
+                        objetivos comerciales.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="Imagenes/programacion.png" alt="" width="80" height="64" loading="lazy">
+                    <h3>Programación JavaScript</h3>
+                    <p class="servicio__sub">Web Graphic SEO</p>
+                    <p>Soy un programador de JavaScript con experiencia en desarrollo web y móvil. Puedo crear
+                        aplicaciones web y móviles interactivas, atractivas y fáciles de usar.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="Imagenes/seo.png" alt="" width="72" height="64" loading="lazy">
+                    <h3>Posicionamiento SEO</h3>
+                    <p class="servicio__sub">Web Graphic SEO</p>
+                    <p>Soy un especialista en SEO con experiencia en la optimización de sitios web para los motores de
+                        búsqueda. Puedo ayudarte a que tu sitio web aparezca en los primeros resultados de búsqueda
+                        para las palabras clave que te interesan.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="Imagenes/alojamiento.png" alt="" width="64" height="64" loading="lazy">
+                    <h3>Alojamiento de Sitios</h3>
+                    <p class="servicio__sub">Web Graphic SEO</p>
+                    <p>Soy un experto en alojamiento de sitios web. Puedo ayudarte a encontrar el alojamiento web
+                        adecuado para tus necesidades y a configurar tu sitio web para que sea seguro y confiable.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="Imagenes/diseñador.png" alt="" width="64" height="64" loading="lazy">
+                    <h3>Diseñador Gráfico</h3>
+                    <p class="servicio__sub">Web Graphic SEO</p>
+                    <p>Soy un diseñador gráfico apasionado por crear experiencias visuales que impacten a los demás.
+                        Tengo un fuerte sentido del diseño y la estética, y siempre estoy buscando nuevas formas de
+                        comunicar ideas de manera creativa.</p>
+                </article>
+
+                <article class="servicio">
+                    <img src="Imagenes/consultor.png" alt="" width="97" height="64" loading="lazy">
+                    <h3>Consultor Externo</h3>
+                    <p class="servicio__sub">Web Graphic SEO</p>
+                    <p>Soy un consultor externo con experiencia en el área de desarrollo de software. Puedo ayudar a las
+                        empresas a mejorar sus procesos de desarrollo, aumentar la productividad y garantizar la
+                        calidad de sus productos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+            <div class="contenedor contenedor--estrecho">
+                <h2 class="habilidades__titulo">HABILIDADES</h2>
+                <ul class="barras">
+                    <li class="barra">
+                        <div class="barra__fila"><span>HTML y CSS</span><span>75%</span></div>
+                        <div class="barra__pista" role="progressbar" aria-label="HTML y CSS" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"><div class="barra__relleno"></div></div>
+                    </li>
+                    <li class="barra">
+                        <div class="barra__fila"><span>JavaScript</span><span>70%</span></div>
+                        <div class="barra__pista" role="progressbar" aria-label="JavaScript" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100"><div class="barra__relleno"></div></div>
+                    </li>
+                    <li class="barra">
+                        <div class="barra__fila"><span>Bases de Datos</span><span>90%</span></div>
+                        <div class="barra__pista" role="progressbar" aria-label="Bases de Datos" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100"><div class="barra__relleno"></div></div>
+                    </li>
+                    <li class="barra">
+                        <div class="barra__fila"><span>Python</span><span>35%</span></div>
+                        <div class="barra__pista" role="progressbar" aria-label="Python" aria-valuenow="35"
+                            aria-valuemin="0" aria-valuemax="100"><div class="barra__relleno"></div></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="seccion seccion--rosa" id="proyectos">
+            <h2 class="seccion__titulo">MIS PROYECTOS</h2>
+            <ul class="proyectos contenedor">
+                <li class="proyecto">
+                    <a href="../skate-city/index.html">
+                        <img src="../../assets/img/proyectos/skate-city-640.webp" alt="Vista de la página Skate City"
+                            width="640" height="320" loading="lazy">
+                        <div class="proyecto__info">
+                            <h3>Skate City</h3>
+                            <p>Tienda de skateboarding con catálogo por secciones, buscador y carrito de compras dinámico.</p>
+                            <p class="proyecto__tec">Bootstrap · JavaScript · CSS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="../tienda-electronica/index.html">
+                        <img src="../../assets/img/proyectos/tienda-electronica-640.webp"
+                            alt="Vista de la Tienda de electrónica" width="640" height="320" loading="lazy">
+                        <div class="proyecto__info">
+                            <h3>Tienda de electrónica</h3>
+                            <p>Página de inicio de una tienda de tecnología, con banners de producto, categorías y beneficios.</p>
+                            <p class="proyecto__tec">HTML · CSS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="../rapid-bite/index.html">
+                        <img src="../../assets/img/proyectos/rapid-bite-640.webp" alt="Vista del menú Rapid Bite"
+                            width="640" height="320" loading="lazy">
+                        <div class="proyecto__info">
+                            <h3>Rapid Bite</h3>
+                            <p>Menú digital de comidas rápidas: varias páginas por categoría con navegación lateral e identidad propia.</p>
+                            <p class="proyecto__tec">HTML · CSS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="../veterinaria/index.html">
+                        <img src="../../assets/img/proyectos/veterinaria-640.webp"
+                            alt="Vista de la app Veterinaria Animalia" width="640" height="320" loading="lazy">
+                        <div class="proyecto__info">
+                            <h3>Veterinaria Animalia</h3>
+                            <p>Agenda de citas para mascotas: registro de pacientes, propietarios y consulta de citas activas.</p>
+                            <p class="proyecto__tec">JavaScript · HTML · CSS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="../gestion-tareas/index.html">
+                        <img src="../../assets/img/proyectos/gestion-tareas-640.webp"
+                            alt="Vista de la app Gestión de tareas" width="640" height="320" loading="lazy">
+                        <div class="proyecto__info">
+                            <h3>Gestión de tareas</h3>
+                            <p>Lista de tareas con fecha y prioridad, ordenamiento y edición de cada actividad.</p>
+                            <p class="proyecto__tec">JavaScript · HTML · CSS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="../formulario/index.html">
+                        <img src="../../assets/img/proyectos/formulario-640.webp"
+                            alt="Vista del Formulario de registro" width="640" height="320" loading="lazy">
+                        <div class="proyecto__info">
+                            <h3>Formulario de registro</h3>
+                            <p>Formulario de datos personales que construye una tabla con los registros ingresados.</p>
+                            <p class="proyecto__tec">JavaScript · HTML · CSS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="../calculadora/index.html">
+                        <img src="../../assets/img/proyectos/calculadora-640.webp" alt="Vista de la Calculadora"
+                            width="640" height="320" loading="lazy">
+                        <div class="proyecto__info">
+                            <h3>Calculadora</h3>
+                            <p>Calculadora de operaciones básicas con teclado en pantalla.</p>
+                            <p class="proyecto__tec">JavaScript · CSS</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="seccion seccion--gris" id="contacto">
+            <h2 class="seccion__titulo">CONTÁCTAME AHORA</h2>
+            <form class="contacto contenedor contenedor--medio" id="form-contacto">
+                <div class="contacto__fila">
+                    <label>
+                        <span class="oculto">Nombre completo</span>
+                        <input type="text" name="nombre" placeholder="Nombre Completo*" autocomplete="name" required>
+                    </label>
+                    <label>
+                        <span class="oculto">Dirección de email</span>
+                        <input type="email" name="email" placeholder="Dirección de Email" autocomplete="email">
+                    </label>
+                </div>
+                <label>
+                    <span class="oculto">Tema</span>
+                    <input type="text" name="tema" placeholder="Tema...">
+                </label>
+                <label>
+                    <span class="oculto">Mensaje</span>
+                    <textarea name="mensaje" rows="8" placeholder="Tu Mensaje..." required></textarea>
+                </label>
+                <button class="boton boton--oscuro contacto__enviar" type="submit">Enviar Mensaje</button>
+                <p class="contacto__estado" id="contacto-estado" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>Todos los derechos reservados · <span id="anio">2026</span></p>
+        <ul class="redes redes--pie">
+            <li><a href="https://www.facebook.com/juli.duran.940?mibextid=ZbWKwL" target="_blank" rel="noopener"
+                    aria-label="Facebook"><img src="Imagenes/facebook.png" alt="" width="28" height="28" loading="lazy"></a></li>
+            <li><a href="https://instagram.com/juliduran9?igshid=Y3NlOGVwYWtzdWg3" target="_blank" rel="noopener"
+                    aria-label="Instagram"><img src="Imagenes/instagram.png" alt="" width="28" height="28" loading="lazy"></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        (function () {
+            document.getElementById("anio").textContent = new Date().getFullYear();
+
+            // Menú móvil
+            var boton = document.getElementById("menu-boton");
+            var cabecera = document.getElementById("cabecera");
+            function cerrar() {
+                cabecera.classList.remove("abierta");
+                boton.setAttribute("aria-expanded", "false");
+                boton.setAttribute("aria-label", "Abrir menú");
+            }
+            boton.addEventListener("click", function () {
+                var abierto = cabecera.classList.toggle("abierta");
+                boton.setAttribute("aria-expanded", String(abierto));
+                boton.setAttribute("aria-label", abierto ? "Cerrar menú" : "Abrir menú");
+            });
+            document.querySelectorAll(".menu__lista a").forEach(function (a) { a.addEventListener("click", cerrar); });
+            document.addEventListener("keydown", function (e) { if (e.key === "Escape") cerrar(); });
+
+            // Barras de habilidades: se llenan al entrar en pantalla
+            var habilidades = document.getElementById("habilidades");
+            if ("IntersectionObserver" in window) {
+                new IntersectionObserver(function (entradas, obs) {
+                    if (entradas[0].isIntersecting) { habilidades.classList.add("visible"); obs.disconnect(); }
+                }, { threshold: 0.3 }).observe(habilidades);
+            } else {
+                habilidades.classList.add("visible");
+            }
+
+            // Formulario de contacto: aún no hay servidor que reciba los mensajes
+            var form = document.getElementById("form-contacto");
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                var nombre = form.nombre.value.trim();
+                document.getElementById("contacto-estado").textContent =
+                    "Gracias" + (nombre ? ", " + nombre : "") +
+                    ". Este formulario aún no envía mensajes; escríbeme por Facebook o Instagram.";
+                form.reset();
+            });
+        })();
+    </script>
+</body>
+
+</html>

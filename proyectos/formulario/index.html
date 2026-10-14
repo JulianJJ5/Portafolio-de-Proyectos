@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de datos personales con validación y tabla de registros editable.">
+    <title>Registro de datos personales | Portafolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="../../assets/js/volver.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <main class="contenedor">
+        <header class="encabezado">
+            <h1>Registro de datos personales</h1>
+            <p>Completa el formulario para agregar una persona a la tabla. Los campos marcados con <span class="obligatorio" aria-hidden="true">*</span> son obligatorios.</p>
+        </header>
+
+        <form id="formulario" class="formulario" novalidate>
+            <fieldset class="grupo">
+                <legend>Datos personales</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombres <span class="obligatorio" aria-hidden="true">*</span></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej.: María José" autocomplete="given-name" required aria-describedby="error-nombre">
+                    <p class="error" id="error-nombre"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellidos <span class="obligatorio" aria-hidden="true">*</span></label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ej.: Pérez Gómez" autocomplete="family-name" required aria-describedby="error-apellido">
+                    <p class="error" id="error-apellido"></p>
+                </div>
+
+                <fieldset class="campo campo--radios" aria-describedby="error-genero">
+                    <legend>Género <span class="obligatorio" aria-hidden="true">*</span></legend>
+                    <div class="radios">
+                        <label class="radio"><input type="radio" name="genero" value="Masculino" required> Masculino</label>
+                        <label class="radio"><input type="radio" name="genero" value="Femenino"> Femenino</label>
+                        <label class="radio"><input type="radio" name="genero" value="Otro"> Otro</label>
+                    </div>
+                    <p class="error" id="error-genero"></p>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="fecha">Fecha de nacimiento <span class="obligatorio" aria-hidden="true">*</span></label>
+                    <input type="date" id="fecha" name="fecha" autocomplete="bday" required aria-describedby="error-fecha">
+                    <p class="error" id="error-fecha"></p>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <legend>Documento y contacto</legend>
+
+                <div class="campo">
+                    <label for="tipodoc">Tipo de documento <span class="obligatorio" aria-hidden="true">*</span></label>
+                    <select id="tipodoc" name="tipodoc" required aria-describedby="error-tipodoc">
+                        <option value="">Selecciona una opción</option>
+                        <option value="C.C.">Cédula de ciudadanía</option>
+                        <option value="C.E.">Cédula de extranjería</option>
+                        <option value="T.I.">Tarjeta de identidad</option>
+                    </select>
+                    <p class="error" id="error-tipodoc"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="documento">Número de documento <span class="obligatorio" aria-hidden="true">*</span></label>
+                    <input type="text" id="documento" name="documento" placeholder="Solo números" inputmode="numeric" required aria-describedby="error-documento">
+                    <p class="error" id="error-documento"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono <span class="obligatorio" aria-hidden="true">*</span></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej.: 3001234567" inputmode="numeric" autocomplete="tel" required aria-describedby="error-telefono">
+                    <p class="error" id="error-telefono"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico <span class="obligatorio" aria-hidden="true">*</span></label>
+                    <input type="email" id="correo" name="correo" placeholder="nombre@dominio.com" autocomplete="email" required aria-describedby="error-correo">
+                    <p class="error" id="error-correo"></p>
+                </div>
+            </fieldset>
+
+            <div class="acciones">
+                <button type="submit" id="btn-guardar" class="boton boton--principal">Agregar registro</button>
+                <button type="button" id="btn-cancelar" class="boton boton--secundario" hidden>Cancelar edición</button>
+            </div>
+            <p id="estado" class="estado" role="status" aria-live="polite"></p>
+        </form>
+
+        <section class="registros" aria-labelledby="titulo-registros">
+            <h2 id="titulo-registros">Registros <span id="contador" class="contador">(0)</span></h2>
+            <p id="vacio" class="vacio">Aún no hay registros. Agrega el primero con el formulario.</p>
+            <div class="tabla-scroll" id="tabla-scroll" hidden>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Género</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Nacimiento</th>
+                            <th scope="col">Documento</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing de tienda de electrónica: audífonos, gadgets, laptops, consolas y más.">
+    <title>Phlox | Tienda de electrónica</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="../../assets/js/volver.js"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <a class="logo" href="#">
+            <img src="https://images.squarespace-cdn.com/content/v1/60bfa66082d2227036aa21ed/1caf42ff-8687-4ec2-82f7-c9540a2e9425/Phlox+Logo_Wordmark_DarkLarge_Transparent.png"
+                alt="Phlox" width="115" height="32">
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="menu" class="menu" aria-label="Principal">
+            <ul id="izquierda">
+                <li><a href="#" aria-current="page"><b>Home</b></a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="derecha">
+            <a href="#" class="login">Login</a>
+            <button type="button" class="icono" aria-label="Buscar">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            </button>
+            <button type="button" class="icono" aria-label="Carrito">
+                <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main id="container">
+
+        <section id="uno" class="hero">
+            <div id="textouno">
+                <h3>Beats Solo</h3>
+                <h1>Wireless</h1>
+            </div>
+            <p id="textotres" aria-hidden="true">HEADPHONE</p>
+            <img id="audi" src="Headphone.png" alt="Audífonos Beats Solo inalámbricos" width="600" height="600" fetchpriority="high">
+            <a href="#" id="bton" class="boton">Shop By Category</a>
+            <div id="textodos">
+                <h4>Description</h4>
+                <p>There are many variations passages <br> of Lorem Ipsum available, but the <br> majority have suffered alteration</p>
+            </div>
+        </section>
+
+        <section class="tarjetas" aria-label="Categorías">
+            <article class="mn mn--oscuro">
+                <div class="textos1">
+                    <p class="txt1">Enjoy</p>
+                    <p class="txt2">With</p>
+                    <p class="txt3">EARPHONE</p>
+                </div>
+                <a href="#" class="boton">Browse</a>
+                <img class="producto producto--auri" src="auriculares.png" alt="Audífonos in-ear" width="300" height="300" loading="lazy">
+            </article>
+
+            <article class="mn mn--amarillo">
+                <div class="textos1">
+                    <p class="txt1">Enjoy</p>
+                    <p class="txt2">With</p>
+                    <p class="txt3">GADGETS</p>
+                </div>
+                <a href="#" class="boton boton--blanco">Browse</a>
+                <img class="producto producto--smart" src="smartwatch.png" alt="Reloj inteligente" width="1400" height="788" loading="lazy">
+            </article>
+
+            <article class="mn largo largo--rojo">
+                <div class="textos1">
+                    <p class="txt1">Trend</p>
+                    <p class="txt2">Devices</p>
+                    <p class="txt3">LAPTOP</p>
+                </div>
+                <a href="#" class="boton boton--blanco">Browse</a>
+                <img class="producto producto--laptop" src="Laptop.png" alt="Laptops" width="638" height="351" loading="lazy">
+            </article>
+
+            <article class="mn largo largo--gris">
+                <div class="textos1">
+                    <p class="txt1">Best</p>
+                    <p class="txt2">Gaming</p>
+                    <p class="txt3 txt3--blanco">CONSOLE</p>
+                </div>
+                <a href="#" class="boton">Browse</a>
+                <img class="producto producto--ps5" src="PS5.png" alt="Consola PS5 con control" width="900" height="900" loading="lazy">
+            </article>
+
+            <article class="mn mn--verde">
+                <div class="textos1">
+                    <p class="txt1">Play</p>
+                    <p class="txt2">Game</p>
+                    <p class="txt3">OCULUS</p>
+                </div>
+                <a href="#" class="boton boton--blanco">Browse</a>
+                <img class="producto producto--oculus" src="oculus.png" alt="Persona jugando con gafas de realidad virtual" width="1000" height="1988" loading="lazy">
+            </article>
+
+            <article class="mn mn--azul">
+                <div class="textos1">
+                    <p class="txt1">New</p>
+                    <p class="txt2">Amazon</p>
+                    <p class="txt3">Speaker</p>
+                </div>
+                <a href="#" class="boton boton--blanco">Browse</a>
+                <img class="producto producto--speaker" src="speaker.png" alt="Parlante inalámbrico" width="438" height="925" loading="lazy">
+            </article>
+        </section>
+
+        <section id="cuatro" aria-label="Beneficios">
+            <div class="abajo">
+                <img src="truck.png" alt="" width="256" height="154" loading="lazy">
+                <div class="textosa">
+                    <b>Free Shipping</b>
+                    <span>Free Shipping On All Order</span>
+                </div>
+            </div>
+            <div class="abajo">
+                <img src="garantia.png" alt="" width="512" height="512" loading="lazy">
+                <div class="textosa">
+                    <b>Money Guarantee</b>
+                    <span>30 Day Money Back</span>
+                </div>
+            </div>
+            <div class="abajo">
+                <img src="support.png" alt="" width="1600" height="1933" loading="lazy">
+                <div class="textosa">
+                    <b>Online Support 24/7</b>
+                    <span>Technical Support 24/7</span>
+                </div>
+            </div>
+            <div class="abajo">
+                <img src="cartera.png" alt="" width="438" height="512" loading="lazy">
+                <div class="textosa">
+                    <b>Secure Payment</b>
+                    <span>All Cards Accepted</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="cinco">
+            <div id="izq">
+                <p class="t1">20 % OFF</p>
+                <h2 id="t2">FINE <br> SMILE</h2>
+                <p class="t1">15 Nov To 7 Dec</p>
+            </div>
+
+            <img id="audir" src="audir.png" alt="Audífonos Beats Solo Air" width="995" height="1000" loading="lazy">
+
+            <div id="der">
+                <p class="t1"><b>Beats Solo Air</b></p>
+                <h2 id="t3">Summer Sale</h2>
+                <p class="t1">Company that's grown from 270 to 480 <br> employees in the last 12 months.</p>
+                <a href="#" id="botonf">Shop</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Menú desplegable en móviles
+        (function () {
+            var boton = document.querySelector(".menu-toggle");
+            var menu = document.getElementById("menu");
+            boton.addEventListener("click", function () {
+                var abierto = menu.classList.toggle("abierto");
+                boton.setAttribute("aria-expanded", abierto);
+                boton.setAttribute("aria-label", abierto ? "Cerrar menú" : "Abrir menú");
+            });
+        })();
+    </script>
+</body>
+
+</html>
